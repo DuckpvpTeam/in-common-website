@@ -1,1 +1,116 @@
-sample
+<head>
+<title>Canarddu38's page</title>
+</head>
+<style>
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+
+.gradient-border {
+  --border-width: 3px;
+
+  position: relative;
+  display: flex;
+  <!-- justify-content: center; -->
+  align-items: center;
+  <!-- width: 300px; -->
+  <!-- height: 200px; -->
+  font-family: Lato, sans-serif;
+  <!-- font-size: 2.5rem; -->
+  text-transform: uppercase;
+  color: white;
+  background: #222;
+  border-radius: var(--border-width);
+}
+.gradient-border:after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      hsl(224, 85%, 66%),
+      hsl(269, 85%, 66%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(44, 85%, 66%),
+      hsl(89, 85%, 66%),
+      hsl(134, 85%, 66%),
+      hsl(179, 85%, 66%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+
+
+h1 {
+	font-size: 60px;
+	font-family: Sans-serif;
+	text-align: center;
+	color: #ffffff;
+}
+p {
+	font-family: Sans-serif;
+	color: #ffffff;
+	font-size: 30px;
+}
+.image {
+	width: 100px;
+	height: 100px;
+}
+.container {
+	margin-bottom: 50px;
+	display: flex;
+	margin-right: 50px;
+    align-items: center;
+    flex-direction: row;
+	height: 100px;
+	width: 400px;
+	border-radius: 8px;
+	background-color: #000000;
+	padding: 3px;
+}
+.container:hover {
+	transform: scale(1.05);
+	cursor: pointer;
+}
+.grid {
+	display: grid;
+	justify-content: center;
+	display: flex;
+    align-items: center;
+}
+</style>
+<body style="display: flex; align-items: center; flex-direction: column; height: 100vh; background-image: url(https://loading.io/mod/background/speedline/index.svg);background-size: cover; background-position: top; position: relative; justify-content: center;">
+<h1>Canarddu38's page</h1>
+	<div class="grid">
+		<div class="gradient-border container">
+			<img class="image" src="https://webstockreview.net/images600_/discord-icon-png-3.png">
+			<p onclick="window.location = 'https://discord.com/invite/sTVWespH4M'" style="color"><strong>My discord server</strong></p>
+		</div>
+		<div class="gradient-border container">
+			<img class="image" src="https://github.com/canarddu38/DUCKSPLOIT/blob/root/images/icon-nobg.png?raw=true">
+			<p onclick="window.location = 'https://ducksploit.com'" style="color"><strong>My project</strong></p>
+		</div>
+	</div>
+	<div class="grid">
+		<div class="gradient-border container">
+			<img style="width: 90px; height: 90px;" class="image" src="https://webstockreview.net/images600_/github-icon-png-8.png">
+			<p onclick="window.location = 'https://github.com/canarddu38'" style="color"><strong>My github</strong></p>
+		</div>
+		<div class="gradient-border container">
+			<img class="image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA1UlEQVR4nO3XXQ7BQBSG4V5jH0rZCFbqZ3UId69MVIiEVjuJI97nam6+zJkzOZ20KCRJkiRJkiRJkvQeMAJmQJXWv5bvDJgAO+DMXVpvgTJ6vhdgBRx57QAso+b7Hn7asPljEWW0fI4G7GhvEy3f9/DDp5lrcgIGUfI5GjDnc1WUfI4GzDoUMI2Sz9GA4V+PQFK/s22ti2D53oCyfmKa7IFxtHyuJiwbikibL6Lms+B6E5t6zm7Set2m89/OZwMM6h+RqssH59t5SZIkSZIkSZKk4t9cAFMmmImXe8LoAAAAAElFTkSuQmCC">
+			<p onclick="window.location = 'https://duckpvpteam.github.io/cs-gui-builder/'" style="color"><strong>One of my cool sites</strong></p>
+		</div>
+	</div>
+</body>
